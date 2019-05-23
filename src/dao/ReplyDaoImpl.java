@@ -37,10 +37,8 @@ public class ReplyDaoImpl implements ReplyDao {
 		}
 		return list;
 	}
-
 	@Override
 	public int addReply(Reply reply) {
-
 		String sql = "insert into t_reply(msg,time,titleId,account) values(?,?,?,?)";
 		Object[] obj = { reply.getMsg(), reply.getTime(), reply.getTitleId(), reply.getAccount() };
 		return lt.excuteUpdate(sql, obj);
