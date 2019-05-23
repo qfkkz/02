@@ -28,7 +28,6 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>addtitle</servlet-name>
         <servlet-class>servlet.AddTitleServlet</servlet-class>
@@ -37,7 +36,6 @@
         <servlet-name>addtitle</servlet-name>
         <url-pattern>/addtitle</url-pattern>
     </servlet-mapping>
-
 
     <servlet>
         <servlet-name>addreply</servlet-name>

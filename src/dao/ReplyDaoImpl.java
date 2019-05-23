@@ -12,7 +12,7 @@ import pojo.Title;
 import util.BaseDao;
 
 public class ReplyDaoImpl implements ReplyDao {
-	BaseDao bd = new BaseDao();
+	BaseDao lt = new BaseDao();
 
 	@Override
 	public List<Reply> getReplyListByTitleId(Title t) {
@@ -20,7 +20,7 @@ public class ReplyDaoImpl implements ReplyDao {
 		Object[] obj = { t.getId() };
 		List<Reply> list = new ArrayList<Reply>();
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		ResultSet rs = bd.excuteQuery(sql, obj);
+		ResultSet rs = lt.excuteQuery(sql, obj);
 		try {
 			while (rs.next()) {
 				Reply r = new Reply();
@@ -43,7 +43,7 @@ public class ReplyDaoImpl implements ReplyDao {
 
 		String sql = "insert into t_reply(msg,time,titleId,account) values(?,?,?,?)";
 		Object[] obj = { reply.getMsg(), reply.getTime(), reply.getTitleId(), reply.getAccount() };
-		return bd.excuteUpdate(sql, obj);
+		return lt.excuteUpdate(sql, obj);
 	}
 
 }
