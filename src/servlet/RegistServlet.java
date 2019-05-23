@@ -24,7 +24,7 @@ public class RegistServlet extends HttpServlet {
 		int i = new UserServiceImpl().regist(user);
 		if (i != 0) {
 			request.setAttribute("mess", "注册成功");
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			request.getRequestDispatcher("login.html").forward(request, response);
 		} else {
 			request.setAttribute("mess", "注册失败");
 			request.getRequestDispatcher("regist.jsp").forward(request, response);

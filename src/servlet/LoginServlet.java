@@ -31,10 +31,10 @@ public class LoginServlet extends HttpServlet {
 			List<Title> list = ts.findAllList();
 			request.getSession().setAttribute("titleList", list);
 			request.getSession().setAttribute("user", user);
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("sy.jsp").forward(request, response);
 		} else {
 			request.setAttribute("mess", "登陆失败");
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			request.getRequestDispatcher("login.html").forward(request, response);
 		}
 	}
 

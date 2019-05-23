@@ -13,7 +13,7 @@ public class TitleDaoImpl implements TitleDao {
 
 	@Override
 	public List<Title> getAllTitle() {
-		String sql = "select * from t_title";
+		String sql = "select * from t_title order by id desc";
 		List<Title> list = new ArrayList<Title>();
 		ResultSet rs = bd.excuteQuery(sql);
 		try {
