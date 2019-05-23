@@ -26,8 +26,8 @@
 <body>
 	<form action="addTitle">
 		帖子标题：<br>
-		<textarea rows="5" cols="5" name="title">标题内容</textarea>
-		<br> <input type="submit" value="发布">
+		<textarea rows="10" cols="10" name="title">标题内容</textarea>
+		<br> <input type="submit" value="发布" >
 	</form>
 </body>
 </html>
