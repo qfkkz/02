@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<form action="regist" method="post">
+	<form action="regist.jsp" method="post">
 		用户名: <input type="text" name="account" /> <br> 密码： <input
 			type="password" name="password" /> <input type="submit" value="注册" />
 		<br>

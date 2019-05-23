@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addTitle</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+        {margin:0;padding:0}
+        body{
+            background: url("img/u=1294743814,2168926766&fm=26&gp=0.jpg") no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        span{
+            color: #fff;
+            font-size: 30px;
+            margin-top: 10px;
+            /*background-color: skyblue;*/
+            display: inline-block;
+        }
+        .sr{
+            width: 500px;
+            height: 30px;
+        }
+        textarea{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<form action="addTitle">
+    <div><span>帖子标题：</span>
+    <input type="text" class="sr">
+    <textarea rows="20" cols="96" name="title">帖子内容</textarea>
+    <br> <input type="submit" value="发布"></div>
+</form>
+</body>
+</html>

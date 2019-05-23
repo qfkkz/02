@@ -52,7 +52,6 @@ public class UserDaoImpl implements UserDao {
 		int i = bd.excuteUpdate(sql, obj);
 		bd.closeResource();
 		return i;
-
 	}
 
 }

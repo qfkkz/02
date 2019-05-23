@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<form action="login" method="post">
+	<form action="index.jsp" method="post">
 		用户名:<input type="text" name="account" /> <br>
 		密码：<input type="password" name="password" /><br>
 		<input type="submit" value="登陆" /><br>

@@ -16,12 +16,13 @@
 	-->
 </head>
 
-<body>用户：<c:out value="${sessionScope.user.account}"></c:out> <br>
+<body>
+用户：<c:out value="${sessionScope.user.account}"></c:out> <br>
  <table border="1">
 <c:forEach var="title" items="${sessionScope.titleList}">
-<c:out value="<tr><td>${title.id}</td>" escapeXml="false"></c:out>
-<c:out value="<td>${title.title}</td>" escapeXml="false"></c:out>
-<c:out value="<td><a href='titleDetail.jsp?id=${title.id}'>查看</a></td></tr>" escapeXml="false"></c:out>
+<c:out value="<td>${title.id}</td>" escapeXml="false">帖子序号</c:out>
+<c:out value="<td>${title.title}</td>" escapeXml="false">帖子标题</c:out>
+<c:out value="<td><a href='titleDetail.jsp?id=${title.id}'></a></td></tr>" escapeXml="false">查看</c:out>
 </c:forEach>
 </table>
 <a href="addTitle.jsp">发布帖子</a>
